@@ -48,8 +48,8 @@ contract Lottery is VRFConsumerBase, Ownable{
     function getEntranceFee() public view returns (uint256){
         (,int price,,,) = ethUsdPriceFeed.latestRoundData();
         uint256 adjustedPrice = uint256(price) * 10**10;    //18 decimals
-        // $50, $2,000 / ETH
-        // 50/2,000
+        // $50, $4,085 / ETH
+        // 50/4,085
         // 50 * 100000 / 2000
         uint256 costToEnter = (usdEntryFee * 10 ** 18) / adjustedPrice;
         return costToEnter;
