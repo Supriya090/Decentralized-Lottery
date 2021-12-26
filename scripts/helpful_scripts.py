@@ -58,7 +58,7 @@ def get_contract(contract_name):
         # Address
         # ABI
         contract = Contract.from_abi(
-            contract_type._name, contract_address. contract_type.abi)
+            contract_type._name, contract_address, contract_type.abi)
         # MockV3Aggregator.abi
     return contract
 

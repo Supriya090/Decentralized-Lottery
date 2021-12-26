@@ -7,6 +7,8 @@ compiler:
       - "@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1"
       - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0"
 
+dotenv: .env
+
 networks:
   default: development
   development:
@@ -16,7 +18,7 @@ networks:
     vrf_coordinator: "0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B"
     eth_usd_price_feed: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
     link_token: "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"
-    key_hash: "0x6e75b569a01ef56d18cab6a8e71e6600d6ce853834d4a5748b720d06f878b3a4"
+    keyhash: "0x6e75b569a01ef56d18cab6a8e71e6600d6ce853834d4a5748b720d06f878b3a4"
     fee: 100000000000000000
     verify: True
   mainnet-fork:
